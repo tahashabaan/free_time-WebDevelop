@@ -1,0 +1,128 @@
+/* common style*/
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+:root{
+   --bgcol:rgba(0, 0, 255, 0.582);
+}
+.pd-y{
+  padding:30px 0px;
+}
+ .opacity{
+   opacity: 0.8;
+ }
+ ul{
+  list-style: none;
+}
+header,main,footer{
+  text-align: center;
+}
+.overlay{
+  background-color: rgba(0,0,0,0.8);
+  height: 100%;
+}
+button{
+  background-color: var(--bgcol);
+}
+button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+/* header */
+header{
+  height: 80Vh;
+  color: #fff;
+  background-image:url(../imgs/background3.webp);
+  background-size: cover;
+}
+header nav{padding: 10px;}
+header nav ul{
+   display:flex;
+   justify-content: space-between;
+}
+header nav ul li:hover{
+  cursor: pointer;
+}
+header nav ul li button{
+    padding: 5px 20px;
+    outline: none;
+    border-radius:10px;
+    font-weight: bold;
+    text-transform:capitalize;
+}
+.head-content{
+   display: flex;
+   flex-direction: column;
+   justify-content:center;
+   align-items: center;
+   height:calc(100%);
+   margin-top: -40px;
+}
+.head-title{
+  text-transform: capitalize;
+}
+.head-content-title2{
+    padding: 10px 0px;
+}
+.head-content-des{
+   padding-bottom: 10px;
+}
+.head-btn{
+  border: none;
+  padding:10px 20px;
+  border-radius:10px;
+  font-weight: bold;
+}
+.pro-sec{
+  display: grid;
+  grid-template-columns: repeat(3,minmax(30%,100%));
+  gap:10px 15px;
+  background-color: black;
+  color: #fff;
+
+}
+.pro-item{
+  padding:10px 15px;
+}
+.pro-title{
+  padding-bottom: 10px;
+  text-transform: capitalize;
+  opacity: 0.8;
+}
+.pro-des{
+  line-height:1.5;
+}
+.upgrad-sec{
+background-color: black;
+color: #fff;
+}
+.upgrade-offer{display: flex}
+.upgrade-pre{
+  display: flex;
+}
+.upgrad-title{
+  padding-bottom: 15px;
+  text-transform: capitalize;
+}
+.upgrad-foot{
+    opacity: 0.8;
+
+}
+footer{
+  padding:10px 0px;
+  background-color:rgb(255, 255,255,0.8);
+}
+footer li,a{
+color:rgb(0, 0,0,0.5);
+text-transform: capitalize;
+}
+footer li a{
+text-decoration-color: black ;
+}
+footer ul li:nth-child(1)
+{
+padding-bottom:15px;
+}
+ 

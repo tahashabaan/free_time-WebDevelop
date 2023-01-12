@@ -1,0 +1,37 @@
+/* common style*/
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.pd-y{
+  padding:30px 0px;
+}
+ .over{
+   opacity: 0.8;
+ }
+ ul{
+  list-style: none;
+}
+header,main,footer{
+  text-align: center;
+}
+header{
+  grid-area: head;
+  height: 80Vh;
+  color: #fff;
+  background-image:url(background3.webp);
+}
+nav ul{
+     display:flex;
+}
+.head-sec{
+  display: flex;
+}
+.pro-sec{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+  
+}
+ 

@@ -1,0 +1,73 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+}
+.container{
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-rows:auto 1fr auto ;
+   height: 100vh;
+}
+img{
+  max-width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+header .icon{
+  background-color: rgba(0, 0, 255, 0.63);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+.icon-title{
+  text-transform: capitalize;
+  color: #fff;
+}
+main .qes-mes, main .show-mes{
+  direction:rtl; 
+  padding: 5px 6px;
+  margin: 2px 0px;
+  font-weight:bold;
+  word-spacing: 1px;
+}
+main .qes-mes{
+  background-color:rgba(0, 0, 255, 0.2) ;
+  font-size: 22px;
+}
+main .show-mes{
+  background-color:rgba(0, 0, 255, 0.54) ;
+  font-size: 15px;
+
+}
+footer{
+  border: 1px solid rgba(0, 0, 0, 0.527);
+}
+footer form{
+  display: flex;
+}
+footer #input-text,footer form #submit{
+  outline: none;
+  border: none;
+}
+footer #input-text{
+  flex-basis: 90%;
+  background-color: rgba(0, 0, 0, 0.67);
+  padding: 10px;
+  font-weight:bold;
+  color: #fff;
+}
+footer #input-text::placeholder{
+  color: #fff;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+footer form #submit{
+  flex-basis: 10%;
+  background-color: rgba(0, 0, 255, 0.63);
+  cursor: pointer;
+}

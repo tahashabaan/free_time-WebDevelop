@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div>
+    <p id="demo">yays</p>
+  </div>
+   <div class="container">
+    <section class="section__1">
+      <h2 onclick="this.getBoundingClientRect()">click me</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptatum, ab perspiciatis non modi veritatis iure nulla voluptas ratione enim harum quos deleniti odio doloremque natus. Neque fuga repellendus dolor.
+      </p>
+    </section>
+    section>
+      <h2>welcome my programing</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptatum, ab perspiciatis non modi veritatis iure nulla voluptas ratione enim harum quos deleniti odio doloremque natus. Neque fuga repellendus dolor.
+      </p>
+    </section>
+    section>
+      <h2>welcome my programing</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptatum, ab perspiciatis non modi veritatis iure nulla voluptas ratione enim harum quos deleniti odio doloremque natus. Neque fuga repellendus dolor.
+      </p>
+    </section>
+    <section><h2>welcome my programing</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptatum, ab perspiciatis non modi veritatis iure nulla voluptas ratione enim harum quos deleniti odio doloremque natus. Neque fuga repellendus dolor.
+      </p>
+    <a href="##">learn more</a></section>
+    <section><h2>welcome my programing</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptatum, ab perspiciatis non modi veritatis iure nulla voluptas ratione enim harum quos deleniti odio doloremque natus. Neque fuga repellendus dolor.
+      </p>
+      <a href="##">learn more</a></section>
+    </section>
+
+   </div>
+   <input type="text" id="inpVal">
+   <button id="btn1" onclick="myFunction()">add</button>
+   <button id="btn2" onclick="close()">delete</button>
+   <script >
+     let tempWindow;
+    function myFunction() {
+      let myWindow=window.open("https://www.w3schools.com","_blank","top=500,left=500,width=400,height=300");
+       tempWindow=myWindow;
+  // _blank defaul  _self _top toolbar titlebar resizeable manubar scrollbars
+} 
+function close(){
+  tempWindow.close();
+}
+let documentHeight =document.documentElement.offsetHeight;
+console.log(documentHeight);
+const firstSec=document.querySelector(".section__1")
+firstSec.style.background="red";
+      const height = window.innerHeight;
+      console.log(height);
+      window.scrollTo({
+        left:0 , 
+       top: documentHeight - height,
+       behavior:'smooth'
+      });
+     // Get the heights of the document and viewport.
+let viewportHeight = window.innerHeight;
+// And scroll so the last "page" shows in the viewport
+window.scrollTo(0, documentHeight - viewportHeight);
+
+   </script>
+  
+   <!-- 
+     1-parentNode
+     2-childNodes
+     3-nextSibling
+     4-previousSibling
+     5-previousSibling
+       firstChild
+       lastChild
+       creatElement
+       createElement
+       createTextNode
+    -->
+</body>
+</html>
